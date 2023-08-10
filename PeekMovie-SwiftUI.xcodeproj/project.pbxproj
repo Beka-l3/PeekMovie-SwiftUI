@@ -20,7 +20,7 @@
 		07E893A12A858C0C00EC020F /* SignInRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A02A858C0C00EC020F /* SignInRequestBody.swift */; };
 		07E893A32A858CE400EC020F /* MockingNetworkServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A22A858CE400EC020F /* MockingNetworkServiceImplementation.swift */; };
 		07E893A62A858E0300EC020F /* MockResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A52A858E0300EC020F /* MockResponses.swift */; };
-		07E893AA2A858F9600EC020F /* APIServiceSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A92A858F9600EC020F /* APIServiceSignIn.swift */; };
+		07E893AA2A858F9600EC020F /* SignInAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A92A858F9600EC020F /* SignInAPIService.swift */; };
 		07E893B42A85904000EC020F /* NetworkClientImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893AC2A85904000EC020F /* NetworkClientImplementation.swift */; };
 		07E893B52A85904000EC020F /* NrtworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893AD2A85904000EC020F /* NrtworkClientProtocol.swift */; };
 		07E893B62A85904000EC020F /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893AF2A85904000EC020F /* Empty.swift */; };
@@ -45,7 +45,7 @@
 		07E893A02A858C0C00EC020F /* SignInRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequestBody.swift; sourceTree = "<group>"; };
 		07E893A22A858CE400EC020F /* MockingNetworkServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingNetworkServiceImplementation.swift; sourceTree = "<group>"; };
 		07E893A52A858E0300EC020F /* MockResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponses.swift; sourceTree = "<group>"; };
-		07E893A92A858F9600EC020F /* APIServiceSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceSignIn.swift; sourceTree = "<group>"; };
+		07E893A92A858F9600EC020F /* SignInAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAPIService.swift; sourceTree = "<group>"; };
 		07E893AC2A85904000EC020F /* NetworkClientImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientImplementation.swift; sourceTree = "<group>"; };
 		07E893AD2A85904000EC020F /* NrtworkClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NrtworkClientProtocol.swift; sourceTree = "<group>"; };
 		07E893AF2A85904000EC020F /* Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 		07E893A82A858F7500EC020F /* ApiServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
-				07E893A92A858F9600EC020F /* APIServiceSignIn.swift */,
+				07E893A92A858F9600EC020F /* SignInAPIService.swift */,
 			);
 			path = ApiServiceExtension;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 				07E893B42A85904000EC020F /* NetworkClientImplementation.swift in Sources */,
 				07E893A32A858CE400EC020F /* MockingNetworkServiceImplementation.swift in Sources */,
 				07E893862A8588C300EC020F /* Service.swift in Sources */,
-				07E893AA2A858F9600EC020F /* APIServiceSignIn.swift in Sources */,
+				07E893AA2A858F9600EC020F /* SignInAPIService.swift in Sources */,
 				07E893B52A85904000EC020F /* NrtworkClientProtocol.swift in Sources */,
 				07E893992A858B2700EC020F /* APIService.swift in Sources */,
 				07E8939C2A858B7F00EC020F /* NetworkServiceProtocol.swift in Sources */,

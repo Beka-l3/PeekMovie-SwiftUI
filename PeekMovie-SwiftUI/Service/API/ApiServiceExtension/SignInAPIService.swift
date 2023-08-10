@@ -9,6 +9,7 @@ import Foundation
 
 //    MARK: - Sign In
 extension APIService {
+    
     @discardableResult
     public func signIn(idToken: String, isMocking: Bool = false) async throws -> SocialResponse {
         return try await withCheckedThrowingContinuation { [weak self] continuation in
@@ -31,4 +32,5 @@ extension APIService {
             }
         }
     }
+    
 }
