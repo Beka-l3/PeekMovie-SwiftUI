@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct RootView: View {
+    @EnvironmentObject var appCoordinator: AppCoordinator
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        if appCoordinator.didFinishLoading && appCoordinator.launchScreenIsReady {
+            if appCoordinator.isLoggedIn {
+//                SessionView()
+                Color.blue.ignoresSafeArea()
+            } else {
+//                LogInView()
+                Color.green.ignoresSafeArea()
+            }
+        } else {
+            LaunchView()
+                .onAppear {
+                    appCoordinator.resovleEntrance()
+                }
+        }
     }
 }
 
 //struct RootView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        RootView()
+//            .environmentObject(AppCoordinator())
 //    }
 //}
+

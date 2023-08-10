@@ -14,6 +14,7 @@ struct PeekMovie_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
+                .environmentObject(appCoordinator)
         }
     }
 }

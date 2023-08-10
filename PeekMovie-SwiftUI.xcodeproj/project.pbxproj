@@ -12,6 +12,7 @@
 		07E893712A856F4B00EC020F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E893702A856F4B00EC020F /* Preview Assets.xcassets */; };
 		07E8937A2A85707D00EC020F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893792A85707D00EC020F /* RootView.swift */; };
 		07E8937C2A85708700EC020F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8937B2A85708700EC020F /* AppCoordinator.swift */; };
+		07E8937E2A857D6600EC020F /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8937D2A857D6600EC020F /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		07E893702A856F4B00EC020F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07E893792A85707D00EC020F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		07E8937B2A85708700EC020F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		07E8937D2A857D6600EC020F /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				07E893692A856F4700EC020F /* PeekMovie_SwiftUIApp.swift */,
 				07E8937B2A85708700EC020F /* AppCoordinator.swift */,
+				07E8937D2A857D6600EC020F /* LaunchView.swift */,
 				07E893792A85707D00EC020F /* RootView.swift */,
 				07E8936D2A856F4B00EC020F /* Assets.xcassets */,
 				07E8936F2A856F4B00EC020F /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E8937C2A85708700EC020F /* AppCoordinator.swift in Sources */,
+				07E8937E2A857D6600EC020F /* LaunchView.swift in Sources */,
 				07E8936A2A856F4700EC020F /* PeekMovie_SwiftUIApp.swift in Sources */,
 				07E8937A2A85707D00EC020F /* RootView.swift in Sources */,
 			);
