@@ -20,7 +20,6 @@ struct LaunchView: View {
         .onAppear {
             Task {
                 sleep(3)
-                print("SUP bitches")
                 setLaunchScreenToReady()
             }
         }
