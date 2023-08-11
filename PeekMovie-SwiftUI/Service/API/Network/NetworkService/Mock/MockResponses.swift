@@ -13,10 +13,18 @@ struct MRData {
 }
 
 struct MRSocialResponse {
-    let success: SocialResponseResponse = .init(
+    static let success: SocialResponseResponse = .init(
         token: "mockingSocialResponseToken",
 //        accountExists: Bool.random()
         accountExists: true
     )
 }
+
+struct MRResetPasswordResponse {
+    static let success: ResetPasswordResponse = .init(
+        token: "mockingResetPasswordResponseToken"
+    )
+}
+
+
 

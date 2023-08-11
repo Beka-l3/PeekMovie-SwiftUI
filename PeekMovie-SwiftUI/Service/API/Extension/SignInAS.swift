@@ -11,14 +11,14 @@ import Foundation
 extension APIService {
     
     @discardableResult
-    public func signIn(idToken: String, isMocking: Bool = false) async throws -> SocialResponse {
+    public func signInWithService(type: SignInServiceType, idToken: String, isMocking: Bool = false) async throws -> SocialResponse {
         return try await withCheckedThrowingContinuation { [weak self] continuation in
             guard let self = self else {
                 continuation.resume(throwing: ServiceError.internalError)
                 return
             }
             
-            let _ = ((isMocking || self.isMockingAll) ? mockingNetworkService : networkService).signIn(idToken: idToken) { response in
+            let _ = ((isMocking || self.isMockingAll) ? mockingNetworkService : networkService).signInWithService(type: type, idToken: idToken) { response in
                 switch response {
                 case .success(let data):
                     if let token = data.token, let accountExists = data.accountExists {

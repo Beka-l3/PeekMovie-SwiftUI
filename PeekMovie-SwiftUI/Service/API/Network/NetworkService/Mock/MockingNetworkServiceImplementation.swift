@@ -8,11 +8,13 @@
 import Foundation
 
 final class MockingNetworkServiceImplementation: NetworkService {
-    func signIn(
+    
+    func signInWithService(
+        type: SignInType,
         idToken: String,
         completion: @escaping (Result<SocialResponseResponse, HTTPError>) -> Void
     ) -> Cancellable? {
-        let response = MRSocialResponse().success
+        let response = MRSocialResponse.success
               
         MockingNetworkServiceImplementation.executeCompletionOnMainThread {
             completion(.success(response))
@@ -20,6 +22,68 @@ final class MockingNetworkServiceImplementation: NetworkService {
         
         return nil
     }
+    
+    
+    func signInUsername(username: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
+        let response = Empty()
+              
+        MockingNetworkServiceImplementation.executeCompletionOnMainThread {
+            completion(.success(response))
+        }
+        
+        return nil
+    }
+    
+    func signInPassword(password: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
+        let response = Empty()
+              
+        MockingNetworkServiceImplementation.executeCompletionOnMainThread {
+            completion(.success(response))
+        }
+        
+        return nil
+    }
+    
+    func forgotPasswordSendVerificationCodeByUsername(username: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
+        let response = Empty()
+              
+        MockingNetworkServiceImplementation.executeCompletionOnMainThread {
+            completion(.success(response))
+        }
+        
+        return nil
+    }
+    
+    func forgotPasswordSendVerificationCodeByEmail(email: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
+        let response = Empty()
+              
+        MockingNetworkServiceImplementation.executeCompletionOnMainThread {
+            completion(.success(response))
+        }
+        
+        return nil
+    }
+    
+    func verifyPasswordResetCode(code: String, completion: @escaping (Result<ResetPasswordResponse, HTTPError>) -> Void) -> Cancellable? {
+        let response = MRResetPasswordResponse.success
+        
+        MockingNetworkServiceImplementation.executeCompletionOnMainThread {
+            completion(.success(response))
+        }
+        
+        return nil
+    }
+    
+    func setNewPassword(resetPassword: ResetPassword, newPassword: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
+        let response = Empty()
+              
+        MockingNetworkServiceImplementation.executeCompletionOnMainThread {
+            completion(.success(response))
+        }
+        
+        return nil
+    }
+    
     
 //    MARK: - private
     private static func executeCompletionOnMainThread(_ closure: @escaping () -> Void) {

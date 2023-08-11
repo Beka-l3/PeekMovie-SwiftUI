@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07632A752A864033004526F7 /* SignInNSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632A742A864033004526F7 /* SignInNSI.swift */; };
+		07632A772A864759004526F7 /* ForgotPasswordNSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632A762A864759004526F7 /* ForgotPasswordNSI.swift */; };
+		07632A792A865C04004526F7 /* ForgotPasswordModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632A782A865C04004526F7 /* ForgotPasswordModels.swift */; };
 		07E8936A2A856F4700EC020F /* PeekMovie_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893692A856F4700EC020F /* PeekMovie_SwiftUIApp.swift */; };
 		07E8936E2A856F4B00EC020F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E8936D2A856F4B00EC020F /* Assets.xcassets */; };
 		07E893712A856F4B00EC020F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E893702A856F4B00EC020F /* Preview Assets.xcassets */; };
@@ -17,10 +20,10 @@
 		07E893992A858B2700EC020F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893982A858B2700EC020F /* APIService.swift */; };
 		07E8939C2A858B7F00EC020F /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8939B2A858B7F00EC020F /* NetworkServiceProtocol.swift */; };
 		07E8939E2A858BB000EC020F /* NetworkServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8939D2A858BB000EC020F /* NetworkServiceImplementation.swift */; };
-		07E893A12A858C0C00EC020F /* SignInRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A02A858C0C00EC020F /* SignInRequestBody.swift */; };
+		07E893A12A858C0C00EC020F /* SignInModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A02A858C0C00EC020F /* SignInModels.swift */; };
 		07E893A32A858CE400EC020F /* MockingNetworkServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A22A858CE400EC020F /* MockingNetworkServiceImplementation.swift */; };
 		07E893A62A858E0300EC020F /* MockResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A52A858E0300EC020F /* MockResponses.swift */; };
-		07E893AA2A858F9600EC020F /* SignInAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A92A858F9600EC020F /* SignInAPIService.swift */; };
+		07E893AA2A858F9600EC020F /* SignInAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893A92A858F9600EC020F /* SignInAS.swift */; };
 		07E893B42A85904000EC020F /* NetworkClientImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893AC2A85904000EC020F /* NetworkClientImplementation.swift */; };
 		07E893B52A85904000EC020F /* NrtworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893AD2A85904000EC020F /* NrtworkClientProtocol.swift */; };
 		07E893B62A85904000EC020F /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893AF2A85904000EC020F /* Empty.swift */; };
@@ -31,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07632A742A864033004526F7 /* SignInNSI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInNSI.swift; sourceTree = "<group>"; };
+		07632A762A864759004526F7 /* ForgotPasswordNSI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordNSI.swift; sourceTree = "<group>"; };
+		07632A782A865C04004526F7 /* ForgotPasswordModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordModels.swift; sourceTree = "<group>"; };
 		07E893662A856F4700EC020F /* PeekMovie-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PeekMovie-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E893692A856F4700EC020F /* PeekMovie_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekMovie_SwiftUIApp.swift; sourceTree = "<group>"; };
 		07E8936D2A856F4B00EC020F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,10 +48,10 @@
 		07E893982A858B2700EC020F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		07E8939B2A858B7F00EC020F /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		07E8939D2A858BB000EC020F /* NetworkServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImplementation.swift; sourceTree = "<group>"; };
-		07E893A02A858C0C00EC020F /* SignInRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequestBody.swift; sourceTree = "<group>"; };
+		07E893A02A858C0C00EC020F /* SignInModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModels.swift; sourceTree = "<group>"; };
 		07E893A22A858CE400EC020F /* MockingNetworkServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingNetworkServiceImplementation.swift; sourceTree = "<group>"; };
 		07E893A52A858E0300EC020F /* MockResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponses.swift; sourceTree = "<group>"; };
-		07E893A92A858F9600EC020F /* SignInAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAPIService.swift; sourceTree = "<group>"; };
+		07E893A92A858F9600EC020F /* SignInAS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAS.swift; sourceTree = "<group>"; };
 		07E893AC2A85904000EC020F /* NetworkClientImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientImplementation.swift; sourceTree = "<group>"; };
 		07E893AD2A85904000EC020F /* NrtworkClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NrtworkClientProtocol.swift; sourceTree = "<group>"; };
 		07E893AF2A85904000EC020F /* Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
@@ -66,6 +72,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07632A712A863FB7004526F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07632A722A864001004526F7 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				07E8939D2A858BB000EC020F /* NetworkServiceImplementation.swift */,
+				07632A732A86401E004526F7 /* Extension */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		07632A732A86401E004526F7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				07632A742A864033004526F7 /* SignInNSI.swift */,
+				07632A762A864759004526F7 /* ForgotPasswordNSI.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		07E8935D2A856F4700EC020F = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +118,7 @@
 			children = (
 				07E893802A85880400EC020F /* App */,
 				07E893842A8588A800EC020F /* Service */,
+				07632A712A863FB7004526F7 /* Model */,
 				07E8937F2A8587F300EC020F /* EntranceModule */,
 				07E8936D2A856F4B00EC020F /* Assets.xcassets */,
 				07E8936F2A856F4B00EC020F /* Preview Content */,
@@ -165,10 +197,10 @@
 		07E8939A2A858B6400EC020F /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				07E8939F2A858BF600EC020F /* Model */,
-				07E893A42A858DDE00EC020F /* Mock */,
 				07E8939B2A858B7F00EC020F /* NetworkServiceProtocol.swift */,
-				07E8939D2A858BB000EC020F /* NetworkServiceImplementation.swift */,
+				07E8939F2A858BF600EC020F /* Model */,
+				07632A722A864001004526F7 /* Implementation */,
+				07E893A42A858DDE00EC020F /* Mock */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -176,7 +208,8 @@
 		07E8939F2A858BF600EC020F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				07E893A02A858C0C00EC020F /* SignInRequestBody.swift */,
+				07E893A02A858C0C00EC020F /* SignInModels.swift */,
+				07632A782A865C04004526F7 /* ForgotPasswordModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,17 +228,17 @@
 			children = (
 				07E893982A858B2700EC020F /* APIService.swift */,
 				07E893872A858ACB00EC020F /* Network */,
-				07E893A82A858F7500EC020F /* ApiServiceExtension */,
+				07E893A82A858F7500EC020F /* Extension */,
 			);
 			path = API;
 			sourceTree = "<group>";
 		};
-		07E893A82A858F7500EC020F /* ApiServiceExtension */ = {
+		07E893A82A858F7500EC020F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				07E893A92A858F9600EC020F /* SignInAPIService.swift */,
+				07E893A92A858F9600EC020F /* SignInAS.swift */,
 			);
-			path = ApiServiceExtension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		07E893AB2A85904000EC020F /* NetworkClient */ = {
@@ -301,18 +334,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07632A792A865C04004526F7 /* ForgotPasswordModels.swift in Sources */,
 				07E8939E2A858BB000EC020F /* NetworkServiceImplementation.swift in Sources */,
-				07E893A12A858C0C00EC020F /* SignInRequestBody.swift in Sources */,
+				07E893A12A858C0C00EC020F /* SignInModels.swift in Sources */,
 				07E893B62A85904000EC020F /* Empty.swift in Sources */,
 				07E8937C2A85708700EC020F /* AppCoordinator.swift in Sources */,
 				07E8937E2A857D6600EC020F /* LaunchView.swift in Sources */,
 				07E893B82A85904000EC020F /* HTTPNetworkResponse.swift in Sources */,
 				07E893B72A85904000EC020F /* HTTPRequest.swift in Sources */,
+				07632A772A864759004526F7 /* ForgotPasswordNSI.swift in Sources */,
 				07E893BA2A85904000EC020F /* HTTPError.swift in Sources */,
 				07E893B42A85904000EC020F /* NetworkClientImplementation.swift in Sources */,
 				07E893A32A858CE400EC020F /* MockingNetworkServiceImplementation.swift in Sources */,
 				07E893862A8588C300EC020F /* Service.swift in Sources */,
-				07E893AA2A858F9600EC020F /* SignInAPIService.swift in Sources */,
+				07E893AA2A858F9600EC020F /* SignInAS.swift in Sources */,
+				07632A752A864033004526F7 /* SignInNSI.swift in Sources */,
 				07E893B52A85904000EC020F /* NrtworkClientProtocol.swift in Sources */,
 				07E893992A858B2700EC020F /* APIService.swift in Sources */,
 				07E8939C2A858B7F00EC020F /* NetworkServiceProtocol.swift in Sources */,
