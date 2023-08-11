@@ -8,14 +8,22 @@
 import Foundation
 
 final class MockingNetworkServiceImplementation: NetworkService {
-    
+    private static func executeCompletionOnMainThread(_ closure: @escaping () -> Void) {
+        DispatchQueue.main.async {
+            closure()
+        }
+    }
+}
+
+// MARK: - sign in
+extension MockingNetworkServiceImplementation {
     func signInWithService(
-        type: SignInType,
+        type: SignInServiceType,
         idToken: String,
         completion: @escaping (Result<SocialResponseResponse, HTTPError>) -> Void
     ) -> Cancellable? {
         let response = MRSocialResponse.success
-              
+        
         MockingNetworkServiceImplementation.executeCompletionOnMainThread {
             completion(.success(response))
         }
@@ -26,7 +34,7 @@ final class MockingNetworkServiceImplementation: NetworkService {
     
     func signInUsername(username: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
         let response = Empty()
-              
+        
         MockingNetworkServiceImplementation.executeCompletionOnMainThread {
             completion(.success(response))
         }
@@ -34,16 +42,19 @@ final class MockingNetworkServiceImplementation: NetworkService {
         return nil
     }
     
-    func signInPassword(password: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
-        let response = Empty()
-              
+    func signInPassword(password: String, completion: @escaping (Result<UserResponse, HTTPError>) -> Void) -> Cancellable? {
+        let response = MRUserResponse.success
+        
         MockingNetworkServiceImplementation.executeCompletionOnMainThread {
             completion(.success(response))
         }
         
         return nil
     }
-    
+}
+
+// MARK: - forgot password
+extension MockingNetworkServiceImplementation {
     func forgotPasswordSendVerificationCodeByUsername(username: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
         let response = Empty()
               
@@ -82,13 +93,5 @@ final class MockingNetworkServiceImplementation: NetworkService {
         }
         
         return nil
-    }
-    
-    
-//    MARK: - private
-    private static func executeCompletionOnMainThread(_ closure: @escaping () -> Void) {
-        DispatchQueue.main.async {
-            closure()
-        }
     }
 }

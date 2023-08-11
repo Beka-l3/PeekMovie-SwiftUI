@@ -26,5 +26,15 @@ struct MRResetPasswordResponse {
     )
 }
 
+struct MRUserResponse {
+    static let success: UserResponse = .init(
+        accessToken: "mockingAccessToken",
+        id: 737,
+        createdDate: Date(),
+        username: "MockingName",
+        email: "mocking@email.com"
+    )
+}
+
 
 

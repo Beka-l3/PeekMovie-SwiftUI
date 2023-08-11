@@ -34,7 +34,7 @@ extension NetworkServiceImplementation {
         )
     }
     
-//    MARK: - Sign in with username and password
+//    MARK: - Sign in with credentials
     func signInUsername(username: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
         guard let request = try? createSignInWithCredentialsRequest(credential: username, type: .username) else {
             completion(.failure(.decodingFailed))
@@ -44,7 +44,7 @@ extension NetworkServiceImplementation {
         return networkClient.processRequest(request: request, completion: completion)
     }
     
-    func signInPassword(password: String, completion: @escaping (Result<Empty, HTTPError>) -> Void) -> Cancellable? {
+    func signInPassword(password: String, completion: @escaping (Result<UserResponse, HTTPError>) -> Void) -> Cancellable? {
         guard let request = try? createSignInWithCredentialsRequest(credential: password, type: .password) else {
             completion(.failure(.decodingFailed))
             return nil

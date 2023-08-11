@@ -7,6 +7,14 @@
 
 import Foundation
 
+enum SignInServiceType {
+    case google, apple
+}
+
+enum CredentialType {
+    case username, password
+}
+
 struct SignInWithServiceRequestBody: Encodable {
     let socialToken: String
 }
@@ -25,10 +33,14 @@ struct SocialResponse {
     let accountExists: Bool
 }
 
-enum SignInServiceType {
-    case google, apple
+struct UserResponse: Decodable {
+    let accessToken: String?
+    
+    let id: Int?
+    let createdDate: Date?
+    
+    let username: String?
+    let email: String?
 }
 
-enum CredentialType {
-    case username, password
-}
+

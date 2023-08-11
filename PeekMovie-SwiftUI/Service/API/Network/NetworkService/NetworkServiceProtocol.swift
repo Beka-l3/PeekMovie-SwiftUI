@@ -25,7 +25,7 @@ protocol NetworkService: AnyObject {
     @discardableResult
     func signInPassword(
         password: String,
-        completion: @escaping (Result<Empty, HTTPError>) -> Void
+        completion: @escaping (Result<UserResponse, HTTPError>) -> Void
     ) -> Cancellable?
     
     @discardableResult
