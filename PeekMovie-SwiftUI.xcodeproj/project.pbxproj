@@ -10,6 +10,7 @@
 		07632A752A864033004526F7 /* SignInNSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632A742A864033004526F7 /* SignInNSI.swift */; };
 		07632A772A864759004526F7 /* ForgotPasswordNSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632A762A864759004526F7 /* ForgotPasswordNSI.swift */; };
 		07632A792A865C04004526F7 /* ForgotPasswordModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632A782A865C04004526F7 /* ForgotPasswordModels.swift */; };
+		07632A7B2A86864B004526F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07632A7A2A86864B004526F7 /* User.swift */; };
 		07E8936A2A856F4700EC020F /* PeekMovie_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E893692A856F4700EC020F /* PeekMovie_SwiftUIApp.swift */; };
 		07E8936E2A856F4B00EC020F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E8936D2A856F4B00EC020F /* Assets.xcassets */; };
 		07E893712A856F4B00EC020F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E893702A856F4B00EC020F /* Preview Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		07632A742A864033004526F7 /* SignInNSI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInNSI.swift; sourceTree = "<group>"; };
 		07632A762A864759004526F7 /* ForgotPasswordNSI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordNSI.swift; sourceTree = "<group>"; };
 		07632A782A865C04004526F7 /* ForgotPasswordModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordModels.swift; sourceTree = "<group>"; };
+		07632A7A2A86864B004526F7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07E893662A856F4700EC020F /* PeekMovie-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PeekMovie-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E893692A856F4700EC020F /* PeekMovie_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekMovie_SwiftUIApp.swift; sourceTree = "<group>"; };
 		07E8936D2A856F4B00EC020F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		07632A712A863FB7004526F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				07632A7A2A86864B004526F7 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				07E893A62A858E0300EC020F /* MockResponses.swift in Sources */,
 				07E8936A2A856F4700EC020F /* PeekMovie_SwiftUIApp.swift in Sources */,
 				07E8937A2A85707D00EC020F /* RootView.swift in Sources */,
+				07632A7B2A86864B004526F7 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

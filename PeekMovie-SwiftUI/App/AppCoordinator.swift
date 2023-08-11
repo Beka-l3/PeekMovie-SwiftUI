@@ -12,6 +12,9 @@ final class AppCoordinator: ObservableObject {
     @Published var isLoggedIn: Bool = false
     @Published var launchScreenIsReady: Bool = false
     
+    init() {
+        Service.api.isMockingAll = true
+    }
 //    MARK: - public func
     func resovleEntrance() {
         let t = UInt32.random(in: 1...5)
